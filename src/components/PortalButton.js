@@ -7,8 +7,8 @@ const PortalButton=({buttonclick})=>{
     return ReactDOM.createPortal(
         <div>
             <button id="button" onClick={buttonclick}>Click</button>
-        </div>
-        
+        </div>,
+        portalButtonRoot
     )
 }
 export default PortalButton;

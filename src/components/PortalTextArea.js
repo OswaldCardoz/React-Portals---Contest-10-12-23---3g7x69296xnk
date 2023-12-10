@@ -3,11 +3,12 @@ import  ReactDOM  from 'react-dom';
 
 //complete this function using portals
 const PortalTextArea=({value})=>{
-    const portalTextAreaRoot=document.getElementById('portal-textfield');
+    const portalTextAreaRoot=document.getElementById('portal-textarea');
     return ReactDOM.createPortal(
         <div>
             <textarea id="textarea" value={value}></textarea>
-        </div>
+        </div>,
+        portalTextAreaRoot
     )
 }
 export default PortalTextArea;
